@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+/* Custom global styles for Nurse Portal */
+:root {
+  --primary: #025955;
+  --primary-hover: #024542;
+  --primary-light: rgba(2, 89, 85, 0.1);
+  --bs-primary: #025955;
+  --bs-primary-rgb: 2, 89, 85;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8fafc;
+  zoom: 0.95;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Override Bootstrap Primary Colors */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  box-shadow: 0 4px 10px rgba(2, 89, 85, 0.2);
+}
+
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--primary) !important;
+}
+
+
+/* RTL Overrides */
+[dir="rtl"] {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+[dir="rtl"] .pe-1,
+[dir="rtl"] .pe-2,
+[dir="rtl"] .pe-3,
+[dir="rtl"] .pe-4 {
+  padding-right: 0 !important;
+  padding-left: inherit;
+}
+
+[dir="rtl"] .ps-1,
+[dir="rtl"] .ps-2,
+[dir="rtl"] .ps-3,
+[dir="rtl"] .ps-4 {
+  padding-left: 0 !important;
+  padding-right: inherit;
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] body,
+[data-bs-theme="dark"] html {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .bg-white {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: #2b2b2b !important;
+  border-color: #444 !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] .border {
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .border-primary {
+  border-color: #05b5ab !important;
+}
+
+[data-bs-theme="dark"] .shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .5) !important;
+}
+
+[data-bs-theme="dark"] .border-bottom,
+[data-bs-theme="dark"] .border-top {
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .modal-content {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] input,
+[data-bs-theme="dark"] textarea,
+[data-bs-theme="dark"] select {
+  background-color: #2b2b2b !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+/* Dashboard.css Specific Overrides */
+[data-bs-theme="dark"] .modern-table thead th,
+[data-bs-theme="dark"] .premium-table thead th {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .modern-table tbody tr,
+[data-bs-theme="dark"] .premium-table tbody tr {
+  background-color: #2b2b2b !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-bs-theme="dark"] .modern-table tbody td,
+[data-bs-theme="dark"] .premium-table tbody td {
+  color: #e0e0e0 !important;
+}
+
+[data-bs-theme="dark"] .filter-tabs-container {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .filter-tab:not(.active) {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] .filter-tab:not(.active):hover {
+  background-color: #2b2b2b !important;
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .rbc-off-range-bg {
+  background-color: #1a1a1a !important;
+}
+
+[data-bs-theme="dark"] .rbc-off-range {
+  color: #555 !important;
+}
+
+/* Form Overrides */
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+  background-color: #2b2b2b !important;
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+
+[data-bs-theme="dark"] .form-control:focus,
+[data-bs-theme="dark"] .form-select:focus {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: var(--primary) !important;
+}
+
+[data-bs-theme="dark"] .form-control::placeholder {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] .input-group-text {
+  background-color: #333 !important;
+  color: #f8f9fa !important;
+  border-color: #444 !important;
+}
+
+/* Calendar Overrides */
+[data-bs-theme="dark"] .rbc-calendar {
+  color: #e0e0e0;
+}
+
+[data-bs-theme="dark"] .rbc-header {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .rbc-month-view,
+[data-bs-theme="dark"] .rbc-month-row,
+[data-bs-theme="dark"] .rbc-day-bg {
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .rbc-today {
+  background-color: rgba(2, 89, 85, 0.2) !important;
+}
+
+[data-bs-theme="dark"] .rbc-btn-group button {
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+[data-bs-theme="dark"] .rbc-btn-group button:hover {
+  background-color: #2b2b2b;
+}
+
+[data-bs-theme="dark"] .rbc-btn-group button.rbc-active {
+  background-color: rgba(2, 89, 85, 0.3);
+  color: var(--primary);
+}
+
+[data-bs-theme="dark"] .rbc-toolbar-label {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .rbc-event {
+  background-color: rgba(2, 89, 85, 0.7);
+}
