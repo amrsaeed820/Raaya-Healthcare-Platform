@@ -161,9 +161,18 @@ const Bookings = () => {
                                             <div className="fw-bold text-dark">{booking.service}</div>
                                             <div className="text-12"><i className="fa-regular fa-clock me-1"></i>{booking.date} at {booking.time}</div>
                                         </td>
-                                        <td className="py-3 px-4 text-muted" style={{ fontSize: '14px' }}>
-                                            <div className="fw-bold text-dark">{booking.totalCost || 0} EGP</div>
-                                            <div className="text-12 text-success">+{booking.platformCommissionDeducted || ((booking.totalCost || 0) * 0.1)} EGP (Platform)</div>
+                                        <td className="py-3 px-4" style={{ fontSize: '14px' }}>
+                                            {['missed', 'cancelled'].includes(booking.status) ? (
+                                                <>
+                                                    <div className="fw-bold text-muted text-decoration-line-through">{booking.totalCost || 0} EGP</div>
+                                                    <div className="text-12 text-muted">0 EGP (Platform)</div>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <div className="fw-bold text-dark">{booking.totalCost || 0} EGP</div>
+                                                    <div className="text-12 text-success">+{booking.platformCommissionDeducted || ((booking.totalCost || 0) * 0.1)} EGP (Platform)</div>
+                                                </>
+                                            )}
                                         </td>
                                         <td className="py-3 px-4" style={{ fontSize: '14px' }}>{getStatusBadge(booking.status)}</td>
                                         <td className="py-3 px-4 text-center" onClick={(e) => e.stopPropagation()}>
@@ -279,15 +288,21 @@ const Bookings = () => {
                                     <div className="bg-white rounded-4 p-3 border shadow-sm">
                                         <div className="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                             <span className="text-muted">Total Cost Paid By Patient</span>
-                                            <span className="fw-bold text-dark">{selectedBooking.totalCost || 0} EGP</span>
+                                            <span className={`fw-bold ${['missed', 'cancelled'].includes(selectedBooking.status) ? 'text-muted text-decoration-line-through' : 'text-dark'}`}>
+                                                {selectedBooking.totalCost || 0} EGP
+                                            </span>
                                         </div>
                                         <div className="d-flex justify-content-between mb-2 pb-2 border-bottom">
                                             <span className="text-muted">Platform Commission</span>
-                                            <span className="fw-bold text-success">+{selectedBooking.platformCommissionDeducted || ((selectedBooking.totalCost || 0) * 0.1)} EGP</span>
+                                            <span className={`fw-bold ${['missed', 'cancelled'].includes(selectedBooking.status) ? 'text-muted' : 'text-success'}`}>
+                                                {['missed', 'cancelled'].includes(selectedBooking.status) ? 0 : `+${selectedBooking.platformCommissionDeducted || ((selectedBooking.totalCost || 0) * 0.1)}`} EGP
+                                            </span>
                                         </div>
                                         <div className="d-flex justify-content-between">
                                             <span className="text-muted">Net Earnings for Nurse</span>
-                                            <span className="fw-bold text-primary">{(selectedBooking.totalCost || 0) - (selectedBooking.platformCommissionDeducted || ((selectedBooking.totalCost || 0) * 0.1))} EGP</span>
+                                            <span className={`fw-bold ${['missed', 'cancelled'].includes(selectedBooking.status) ? 'text-muted' : 'text-primary'}`}>
+                                                {['missed', 'cancelled'].includes(selectedBooking.status) ? 0 : (selectedBooking.totalCost || 0) - (selectedBooking.platformCommissionDeducted || ((selectedBooking.totalCost || 0) * 0.1))} EGP
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
