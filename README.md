@@ -114,8 +114,6 @@ This project was built with dedication and teamwork by our group under the DEPI 
 
 ### 2. Jana Bedir — Backend Architect & UI/UX Designer
 - **Role & Contributions**: 
-  - Designed the database schema and MongoDB Atlas structure.
-  - Implemented core server logic, security middlewares, and authentication flows.
   - 
 
 ### 3. Ahmed Fekry — Full-Stack Developer
