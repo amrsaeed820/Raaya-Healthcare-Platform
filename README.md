@@ -102,6 +102,50 @@ npm run dev
 
 ---
 
+## 👥 Team Members & Roles
+
+This project was built with dedication and teamwork by our group under the DEPI program. Below is the team breakdown and contributions:
+
+### 👨‍💻 1. Amr Saeed — Team Leader & Core Developer
+- **Role & Contributions**: 
+  - Overriding project structure, repository setup, and GitHub management.
+  - Developed core patient booking flow and integrated real-time nurse matching.
+  - 
+
+---
+
+### 👩‍💻 2. Jana Bedir — Backend Architect & UI/UX Designer
+- **Role & Contributions**: 
+  - Designed the database schema and MongoDB Atlas structure.
+  - Implemented core server logic, security middlewares, and authentication flows.
+  - 
+
+---
+
+### 👨‍💻 3. Ahmed Fekry — Full-Stack Developer
+- **Role & Contributions**: 
+  - 
+
+---
+
+### 👨‍💻 4. Abdulaziz Ahmed — Frontend Developer (Patient Portal)
+- **Role & Contributions**: 
+  - 
+
+---
+
+### 👨‍💻 5. Youssef Ahmed — Frontend Developer (Admin Dashboard)
+- **Role & Contributions**: 
+  - 
+
+---
+
+### 👩‍💻 6. Eman Reda — Frontend Developer (Nurse Portal)
+- **Role & Contributions**: 
+  - 
+
+---
+
 ## 🏆 Acknowledgments
 
 This project was developed as a graduation requirement for the **DEPI** initiative. It demonstrates a deep understanding of full-stack web development, software architecture, UI/UX design principles, and web performance optimization.
