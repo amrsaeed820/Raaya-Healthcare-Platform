@@ -120,7 +120,9 @@ This project was built with dedication and teamwork by our group under the DEPI 
 
 ### 3. Ahmed Fekry — Full-Stack Developer
 - **Role & Contributions**: 
-  - 
+  - Developed JWT-based authentication system, password recovery, and Nodemailer integration.
+  - Implemented secure API middlewares, session validation, and backend route protection.
+  - Managed database queries and business logic for booking verifications.
 
 ### 4. Abdulaziz Ahmed — Frontend Developer (Patient Portal)
 - **Role & Contributions**: 
