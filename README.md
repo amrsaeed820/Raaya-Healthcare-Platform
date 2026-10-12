@@ -123,8 +123,10 @@ This project was built with dedication and teamwork by our group under the DEPI 
   - Managed database queries and business logic for booking verifications.
 
 ### 4. Abdulaziz Ahmed — Frontend Developer (Patient Portal)
-- **Role & Contributions**: 
-  - 
+- **Role & Contributions**:
+  - Built interactive UI components and layout structures for the Patient Web App.
+  - Implemented nurse filtering, search components, and rating/review display pages.
+  - Integrated map visualization tools for patient location selection.
 
 ### 5. Youssef Ahmed — Frontend Developer (Admin Dashboard)
 - **Role & Contributions**: 
