@@ -138,7 +138,9 @@ This project was built with dedication and teamwork by our group under the DEPI 
 
 ### 6. Eman Reda — Frontend Developer (Nurse Portal)
 - **Role & Contributions**: 
-  - 
+  - Constructed the Nurse Web Portal interface, interactive calendar, and schedule management.
+  - Built earnings tracking dashboards, payout summaries, and active request views.
+  - Developed medical log entry forms and post-visit report interfaces.
 
 ---
 
