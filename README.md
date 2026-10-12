@@ -114,7 +114,9 @@ This project was built with dedication and teamwork by our group under the DEPI 
 
 ### 2. Jana Bedir — Backend Architect & UI/UX Designer
 - **Role & Contributions**: 
-  - 
+  - Designed responsive UI/UX wireframes and visual components for the platform.
+  - Engineered backend REST APIs, authentication controllers, and MongoDB Atlas database schema.
+  - Built interactive dashboard components for patient-nurse interaction.
 
 ### 3. Ahmed Fekry — Full-Stack Developer
 - **Role & Contributions**: 
