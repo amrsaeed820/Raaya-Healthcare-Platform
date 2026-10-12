@@ -128,7 +128,9 @@ This project was built with dedication and teamwork by our group under the DEPI 
 
 ### 5. Youssef Ahmed — Frontend Developer (Admin Dashboard)
 - **Role & Contributions**: 
-  - 
+  - Developed the central Admin Dashboard for system management and metrics oversight.
+  - Implemented nurse document verification, account approval workflows, and user management UI.
+  - Integrated data tables and platform analytics views.
 
 ### 6. Eman Reda — Frontend Developer (Nurse Portal)
 - **Role & Contributions**: 
